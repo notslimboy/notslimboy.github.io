@@ -128,7 +128,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
         <div className="grid grid-cols-2 gap-6">
           <div className="col-span-2">
             <div className="card compact bg-base-100 shadow bg-opacity-40">
-              <div className="card-body">
+              {/* <div className="card-body"> //Enable this if u want display your github project
                 <div className="mx-3 flex items-center justify-between mb-2">
                   <h5 className="card-title">
                     {loading ? (
@@ -154,10 +154,10 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
                 </div>
                 <div className="col-span-2">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {loading || !repo ? renderSkeleton() : renderProjects()}
+                     {loading || !repo ? renderSkeleton() : renderProjects()}
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ const config = {
   github: {
     username: 'notslimboy', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
-    limit: 4, // How many projects to display.
+    limit: 0, // How many projects to display.
     exclude: {
       forks: true, // Forked projects will not be displayed if set to true.
       projects: ['portfolio-old', 'OpenGl', 'notslimboy'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
@@ -76,25 +76,25 @@ const config = {
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
     {
-      title: 'Project Name',
+      title: '18 Days of War Mahabarats',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        'Destroying the opponents tower or base by removing several available units by giving silver as a condition for being able to remove the unit. Players are required to have their strategy in winning the game either in the form of defense or attack. Players are also required to pay attention to each unit issued whether it has been effective or not in defeating the enemy',
       imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+      link: 'https://18daysofwar.mashida.io/',
     },
     {
-      title: 'Project Name',
+      title: 'Kocheng : Battle Of Boings',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        'A Claw Machine game in a ding-dong arena becomes a battle arena for the Puppets (Boings). Every night the machine changes shape for the boings Slapping and bouncing off each other to best the other boings. KOCHENG : BATTLE OF BOINGS is a Multiplayer PVP game where you shoot to bounce your enemies into the arena around you. Together with Kocheng and other Boings, lets join the bouncing party in the Battle of Boings !',
       imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+      link: 'https://play.google.com/store/apps/details?id=com.MiraiMimpi.BATTLEOFBOINGS',
     },
     {
-      title: 'Project Name',
+      title: 'FLASHCARD LUMBER',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        'Flashcard Lumber is a memorization game using the Leitner system mechanism, which is a tool for memorizing a topic that has been chosen by the player by using the resources available on the Anki website.',
       imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
+      link: 'https://gitlab.com/notslimboy/flashcard',
     },
     {
       title: 'Project Name',
