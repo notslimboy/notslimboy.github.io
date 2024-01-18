@@ -11,9 +11,9 @@ const config = {
     },
   },
   social: {
-    linkedin: 'Raka Arya Pratama',
+    linkedin: 'raka-arya-pratama',
     instagram: 'notslimboyy',
-    website: '',
+    website: 'https://notslimboy.github.io/',
     phone: '+6285748981274',
     email: 'raka.arya34@gmail.com',
   },
@@ -90,9 +90,9 @@ const config = {
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many posts to display. Max is 10.
+    source: '', // medium | dev
+    username: '', // to hide blog section, keep it empty
+    limit: 4, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -107,7 +107,7 @@ const config = {
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
