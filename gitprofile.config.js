@@ -13,7 +13,7 @@ const config = {
   social: {
     linkedin: 'raka-arya-pratama',
     instagram: 'notslimboyy',
-    website: 'https://notslimboy.github.io/',
+    website: 'https://notslimboy.my.id/',
     phone: '+6285748981274',
     email: 'raka.arya34@gmail.com',
   },
