@@ -103,7 +103,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-40 h-40 mask mask-circle">
+                      <div className="sm:w-40 md:w=40 lg:w-40 xl:w-80 2xl:w-80 h-40 rounded-2xl">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}

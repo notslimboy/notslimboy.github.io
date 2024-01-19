@@ -49,16 +49,44 @@ const config = {
     },
   ],
 
-  /*
-  certifications: [
+/*  certifications: [
+    {
+      name: 'Mobile Game Creation Training ',
+      body: 'Create some game mechanic and documentation',
+      year: 'August 2021',
+      link: 'https://drive.google.com/file/d/1W76XwFoUEFtdHYhn-t2DXsJf7-WERy75/view',
+    },
     {
       name: 'Lorem ipsum',
       body: 'Lorem ipsum dolor sit amet',
       year: 'March 2022',
       link: 'https://example.com',
     },
-  ],
-*/
+    {
+      name: 'Lorem ipsum',
+      body: 'Lorem ipsum dolor sit amet',
+      year: 'March 2022',
+      link: 'https://example.com',
+    },
+    {
+      name: 'Lorem ipsum',
+      body: 'Lorem ipsum dolor sit amet',
+      year: 'March 2022',
+      link: 'https://example.com',
+    },    {
+      name: 'Lorem ipsum',
+      body: 'Lorem ipsum dolor sit amet',
+      year: 'March 2022',
+      link: 'https://example.com',
+    },    {
+      name: 'Lorem ipsum',
+      body: 'Lorem ipsum dolor sit amet',
+      year: 'March 2022',
+      link: 'https://example.com',
+    },
+
+
+  ],*/
 
   education: [
     {
@@ -169,7 +197,7 @@ const config = {
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: true,
+    disableSwitch: false,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
