@@ -75,56 +75,57 @@ const config = {
       title: '18 Days of War Mahabarats',
       description:
         'Destroying the opponents tower or base by removing several available units by giving silver as a condition for being able to remove the unit. Players are required to have their strategy in winning the game either in the form of defense or attack. Players are also required to pay attention to each unit issued whether it has been effective or not in defeating the enemy',
-      imageUrl: '../public/18-days-of-wars.png',
+      imageUrl:
+        'https://lh3.googleusercontent.com/drive-viewer/AEYmBYQgK--XhOaD_ihXrvSqfRdkd-VdlOoTA1mCs979gAVhcNCqZZ-kGnj40tIqIPaRwqWXlbp81lDSwuq5ZwgKogo--ceGtw=s1600',
       link: 'https://18daysofwar.mashida.io/',
     },
     {
       title: 'Kocheng : Battle Of Boings',
       description:
         'A Claw Machine game in a ding-dong arena becomes a battle arena for the Puppets (Boings). Every night the machine changes shape for the boings Slapping and bouncing off each other to best the other boings. KOCHENG : BATTLE OF BOINGS is a Multiplayer PVP game where you shoot to bounce your enemies into the arena around you. Together with Kocheng and other Boings, lets join the bouncing party in the Battle of Boings !',
-      imageUrl: '../public/bob.png',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRv13qxuXsAeKelgrSkMFY89Ttma4O9LtGEtyNimsQmVcUo9LFMwjFovKxShS3Qgyzp_EFC8QArO5zxVMAoNgd5CYsD=s2560",
       link: 'https://play.google.com/store/apps/details?id=com.MiraiMimpi.BATTLEOFBOINGS',
     },
     {
       title: 'Flashcard Lumber',
       description:
         'Flashcard Lumber is a memorization game using the Leitner system mechanism, which is a tool for memorizing a topic that has been chosen by the player by using the resources available on the Anki website.',
-      imageUrl: '../public/flashcard-wp.png',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYQpnjcE31T7bUvmMd0xEyEsoKmFtPLeVMEmyaW2kDmY4YBmXzZRzFiBF0gseTMYC6uKa58EYVTIyti9CIdqsN12wqF81g=s1600",
       link: 'https://gitlab.com/notslimboy/flashcard',
     },
     {
       title: '3D Science School',
       description:
         '3D Science School is a game that teaches children aged 4–6 years about force, motion, and energy. In this game, there are several mini-games with their own mechanisms. Each mini-game teaches something related to force, motion, and energy.',
-      imageUrl: '../public/image 31.png',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYR4EbYtRuhqU8gBWDtM20LEjJn-DOYaMhaJUgF3NRsVucOmrt_a9dxBBveyvnne5ASq753TPyDcl-MblVN809A-JKv4wA=s1600",
       link: 'https://games.legendsoflearning.com/game/science-school/2935?partner=legends-public&media=video',
     },
     {
       title: 'Water Buoyancy Simulation',
       description:
-        'A water simulation using a ragdoll and a basic object to test the law of buoyancy on the water surface.',
-      imageUrl: '../public/image 27.png',
+        'A water simulation using a rag-doll and a basic object to test the law of buoyancy on the water surface.',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYTrxerMwAbsDvOhymOIiLkny264j_Fyya56EaHOSivWF_KMP-_HAl4y6OKV-MgX1brCM9VfXT6IRsgDotmFjOeExnbPNw=s1600",
       link: 'https://gitlab.com/notslimboy/water-bouyancy',
     },
     {
       title: '3D Battleground',
       description:
         '3D Battleground is an online multiplayer game with third-person shooter gameplay that involves all players being able to collect as many coins as possible in order to win the game.',
-      imageUrl: '../public/image 27-3.png',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYSWvDsYKAvGte1Ke4POvgsrWuIYDU_VtCl4DpD7MjI1DxxbEpT4cqHcAmTn7N9ghWLgAk-4doAXs-7zp_yanjs-EbTC=s2560",
       link: 'https://gitlab.com/notslimboy/3-d-battleground-multiplayer-online-shooting-game',
     },
     {
       title: 'Zombie Land Survivor',
       description:
         'A shooting game that pits players against zombies is called Zombie Land Survival. The player must endure as long as they can.',
-      imageUrl: '../public/image 31-1.png',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYR00a2gWyRqooTifkAIM4waUWqpKWl_HThdm_UmKeQHLW1JENjg5DWDeRrPDJvOMVFqRQaU6ktTtIkDUkUpH_ngCiAXUA=s2560",
       link: 'https://notslimboy.itch.io/zombie',
     },
     {
       title: 'Space Cadet',
       description:
         'Space Cadet is a top-down shooter survival game that has a space theme where the player will be faced with several types of enemies. In that game, the player must complete several rounds in order to win the game.',
-      imageUrl: '../public/image 27-1.png',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRM-ULxtX0GZrCEXHg98iQvzyat4OBclbAueXKcQyrpUYEyYDBjAtLXwBbje6OVGHVPmGl6l2tx8eN9f31XMwrWBwJQaw=s1600",
       link: 'https://notslimboy.itch.io/space-cadets',
     },
   ],
