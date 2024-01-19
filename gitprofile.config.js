@@ -69,6 +69,27 @@ const config = {
     },
   ],
 
+  gameDesignDocument: [
+    {
+      title: 'Car Crash Rumble',
+      description:
+        'Imagine in a city with a battle of the car every day until the cops are sick of what they are doing, Introducing a group of destruction. Car Heads, this group always fights each other to prove who is the strongest in their group. The cops always chase them when they hold a battle in the middle of the city. Car Heads even mock the cops while they are fighting.',
+      imageUrl:
+        'https://lh3.googleusercontent.com/drive-viewer/AEYmBYQFQdHFPj3unH_AANKZKblYH7XCcvPDhQWm5K6smKNvhXqul9ecce25A3b18KwO5YIl_5IY1NevSrP_Y3GfrHUHk1z_=s1600',
+      link: 'https://docs.google.com/document/d/1EV4_IYBSWkQpo3zcPWvBUxn4pZ-YkrlGZH4EU0e1Ym8/edit?usp=drive_link',
+    },
+
+    {
+      title: 'Cafe Express Rush',
+      description:
+        'The player will be a manager at some leftover cafe by the players in the game dads. The player will maintain and develop the leftover cafe from the beginning because the father has to pay the debt and sell all that fancy stuff. All that remains is a cafe, an old coffee machine, and a few tables. In this game, the player will continue their parent\'s legacy.',
+      imageUrl:
+        'https://lh3.googleusercontent.com/drive-viewer/AEYmBYQFQdHFPj3unH_AANKZKblYH7XCcvPDhQWm5K6smKNvhXqul9ecce25A3b18KwO5YIl_5IY1NevSrP_Y3GfrHUHk1z_=s1600',
+      link: 'https://docs.google.com/document/d/1sIxmANlwi5nP8gBvsEIGYj2HIWmt8Cbal4ok7n-QeD4/edit?usp=drive_link',
+    },
+
+  ],
+
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
     {
@@ -205,7 +226,7 @@ const config = {
 
   // Optional Footer. Supports plain text or HTML.
   footer: `Made by <a 
-      class="text-primary" href="https://notslimboy.github.io/"
+      class="text-primary"
       target="_blank"
       rel="noreferrer"
     >NotSlimBoy</a>`,

@@ -26,6 +26,7 @@ import PropTypes from 'prop-types';
 import '../assets/index.css';
 import { formatDistance } from 'date-fns';
 import ExternalProject from './external-project';
+import GameDesignDocument from './game-design-document';
 
 const bgColor = 'bg-base-300';
 
@@ -197,6 +198,11 @@ const GitProfile = ({ config }) => {
                   </div>
                   <div className="lg:col-span-2 col-span-1">
                     <div className="grid grid-cols-1 gap-6">
+                      <GameDesignDocument
+                        loading={loading}
+                        GameDesignDocuments={sanitizedConfig.gameDesignDocument}
+                        googleAnalytics={sanitizedConfig.gameDesignDocument}
+                      />
                       <ExternalProject
                         loading={loading}
                         externalProjects={sanitizedConfig.externalProjects}
@@ -265,6 +271,14 @@ GitProfile.propTypes = {
       fileUrl: PropTypes.string,
     }),
     skills: PropTypes.array,
+    gameDesignDocument: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        link: PropTypes.string.isRequired,
+        imageUrl: PropTypes.string,
+      })
+    ),
     externalProjects: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,

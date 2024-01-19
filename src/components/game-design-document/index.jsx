@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { ga, skeleton } from '../../helpers/utils';
 import LazyImage from '../lazy-image';
 
-const displaySection = (externalProjects) => {
+const displaySection = (gameDesignDocuments) => {
   if (
-    externalProjects &&
-    Array.isArray(externalProjects) &&
-    externalProjects.length
+    gameDesignDocuments &&
+    Array.isArray(gameDesignDocuments) &&
+    gameDesignDocuments.length
   ) {
     return true;
   } else {
@@ -15,10 +15,10 @@ const displaySection = (externalProjects) => {
   }
 };
 
-const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
+const GameDesignDocument = ({ GameDesignDocuments, loading, googleAnalytics }) => {
   const renderSkeleton = () => {
     let array = [];
-    for (let index = 0; index < externalProjects.length; index++) {
+    for (let index = 0; index < GameDesignDocuments.length; index++) {
       array.push(
         <div className="card shadow-lg compact bg-base-100" key={index}>
           <div className="p-8 h-full w-full">
@@ -68,8 +68,8 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
     return array;
   };
 
-  const renderExternalProjects = () => {
-    return externalProjects.map((item, index) => (
+  const renderGameDesignDocuments = () => {
+    return GameDesignDocuments.map((item, index) => (
       <a
         className="card shadow-lg compact bg-base-100 cursor-pointer"
         key={index}
@@ -130,7 +130,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
 
   return (
     <Fragment>
-      {displaySection(externalProjects) && (
+      {displaySection(GameDesignDocuments) && (
         <div className="col-span-1 lg:col-span-2">
           <div className="grid grid-cols-2 gap-6">
             <div className="col-span-2">
@@ -142,14 +142,14 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                         skeleton({ width: 'w-40', height: 'h-8' })
                       ) : (
                         <span className="text-base-content opacity-70">
-                          My Projects
+                          My Game Design Document
                         </span>
                       )}
                     </h5>
                   </div>
                   <div className="col-span-2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {loading ? renderSkeleton() : renderExternalProjects()}
+                      {loading ? renderSkeleton() : renderGameDesignDocuments()}
                     </div>
                   </div>
                 </div>
@@ -162,10 +162,10 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
   );
 };
 
-ExternalProject.propTypes = {
-  externalProjects: PropTypes.array,
+GameDesignDocument.propTypes = {
+  GameDesignDocuments: PropTypes.array,
   loading: PropTypes.bool.isRequired,
   googleAnalytics: PropTypes.object,
 };
 
-export default ExternalProject;
+export default GameDesignDocument;
