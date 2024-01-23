@@ -19,7 +19,7 @@ const config = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/uc?export=download&id=1WnJ698gANvZjRW4FnxfkQvRhWsztKt3i', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/uc?export=download&id=1MyuxJ-A4L_WAK5oafR2-M-ucF5CJS7vu', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Game Design',
