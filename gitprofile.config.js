@@ -26,10 +26,14 @@ const config = {
     'Machination',
     'Game Economy',
     'Game Balancing',
+    'Game Tester',
+    'Game QA',
+    'Notion',
+    'Figma',
     'Sourcetree',
     'Unity',
     'Unreal',
-    'Corel',
+    'Affinity',
     'Git',
   ],
   experiences: [
@@ -121,19 +125,19 @@ const config = {
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
     {
+      title: 'Kocheng : Battle Of Boings',
+      description:
+        'A Claw Machine game in a ding-dong arena becomes a battle arena for the Puppets (Boings). Every night the machine changes shape for the boings Slapping and bouncing off each other to best the other boings. KOCHENG : BATTLE OF BOINGS is a Multiplayer PVP game where you shoot to bounce your enemies into the arena around you. Together with Kocheng and other Boings, lets join the bouncing party in the Battle of Boings !',
+      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRv13qxuXsAeKelgrSkMFY89Ttma4O9LtGEtyNimsQmVcUo9LFMwjFovKxShS3Qgyzp_EFC8QArO5zxVMAoNgd5CYsD=s2560",
+      link: 'https://youtu.be/PuMKBskZpQQ?si=fHE6EWwPU0hWrYew',
+    },
+    {
       title: '18 Days of War Mahabarats',
       description:
         'Destroying the opponents tower or base by removing several available units by giving silver as a condition for being able to remove the unit. Players are required to have their strategy in winning the game either in the form of defense or attack. Players are also required to pay attention to each unit issued whether it has been effective or not in defeating the enemy',
       imageUrl:
         'https://lh3.googleusercontent.com/drive-viewer/AEYmBYQgK--XhOaD_ihXrvSqfRdkd-VdlOoTA1mCs979gAVhcNCqZZ-kGnj40tIqIPaRwqWXlbp81lDSwuq5ZwgKogo--ceGtw=s1600',
       link: 'https://18daysofwar.mashida.io/',
-    },
-    {
-      title: 'Kocheng : Battle Of Boings',
-      description:
-        'A Claw Machine game in a ding-dong arena becomes a battle arena for the Puppets (Boings). Every night the machine changes shape for the boings Slapping and bouncing off each other to best the other boings. KOCHENG : BATTLE OF BOINGS is a Multiplayer PVP game where you shoot to bounce your enemies into the arena around you. Together with Kocheng and other Boings, lets join the bouncing party in the Battle of Boings !',
-      imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRv13qxuXsAeKelgrSkMFY89Ttma4O9LtGEtyNimsQmVcUo9LFMwjFovKxShS3Qgyzp_EFC8QArO5zxVMAoNgd5CYsD=s2560",
-      link: 'https://youtu.be/PuMKBskZpQQ?si=fHE6EWwPU0hWrYew',
     },
     {
       title: 'Flashcard Lumber',
