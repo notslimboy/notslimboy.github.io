@@ -133,7 +133,7 @@ const config = {
       description:
         'A Claw Machine game in a ding-dong arena becomes a battle arena for the Puppets (Boings). Every night the machine changes shape for the boings Slapping and bouncing off each other to best the other boings. KOCHENG : BATTLE OF BOINGS is a Multiplayer PVP game where you shoot to bounce your enemies into the arena around you. Together with Kocheng and other Boings, lets join the bouncing party in the Battle of Boings !',
       imageUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRv13qxuXsAeKelgrSkMFY89Ttma4O9LtGEtyNimsQmVcUo9LFMwjFovKxShS3Qgyzp_EFC8QArO5zxVMAoNgd5CYsD=s2560",
-      link: 'https://play.google.com/store/apps/details?id=com.MiraiMimpi.BATTLEOFBOINGS',
+      link: 'https://youtu.be/PuMKBskZpQQ?si=fHE6EWwPU0hWrYew',
     },
     {
       title: 'Flashcard Lumber',
@@ -185,7 +185,7 @@ const config = {
     limit: 4, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'X53QDWV3QT', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
