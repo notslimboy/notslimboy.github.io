@@ -35,6 +35,7 @@ const config = {
     'Unreal',
     'Affinity',
     'Git',
+    'Corel',
   ],
   experiences: [
     {
