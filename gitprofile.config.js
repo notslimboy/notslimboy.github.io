@@ -121,6 +121,15 @@ const config = {
       link: 'https://docs.google.com/document/d/1sIxmANlwi5nP8gBvsEIGYj2HIWmt8Cbal4ok7n-QeD4/edit?usp=drive_link',
     },
 
+     {
+      title: 'War Line',
+      description:
+        'Players will be placed on a battlefield where there are several bases or towers that must be defeated, namely by using platoons that are directed to other bases or towers. Each level will have its own level of difficulty.',
+      imageUrl:
+        'https://i.imgur.com/6cPCXZh.png',
+      link: 'https://docs.google.com/document/d/19v0TAYoJMxWWdBNiHXhuiC0YolXIe4WXGH_712yBS88/edit?usp=drive_link',
+    },
+
   ],
 
   // To hide the `My Projects` section, keep it empty.
