@@ -14,7 +14,7 @@ const config = {
     linkedin: 'raka-arya-pratama',
     instagram: 'notslimboyy',
     website: 'https://notslimboy.my.id/',
-    phone: '+6285748981274',
+    phone: '6285748981274',
     email: 'raka.arya34@gmail.com',
   },
   resume: {

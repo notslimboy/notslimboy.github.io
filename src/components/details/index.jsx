@@ -234,9 +234,9 @@ const Details = ({ profile, loading, social, github }) => {
               {social?.phone && (
                 <ListItem
                   icon={<RiPhoneFill />}
-                  title="Phone:"
+                  title="WhatsApp:"
                   value={social.phone}
-                  link={`tel:${social.phone}`}
+                  link={`https://wa.me/${social.phone}/?text=Hi%20Raka%20Arya%2C%20%0A%0AI%20reviewed%20your%20portfolio%20and%20am%20impressed%20with%20your%20background.%20Can%20we%20discuss%20it%3F%20`}
                 />
               )}
               {social?.email && (
