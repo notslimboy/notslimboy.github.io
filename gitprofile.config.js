@@ -113,6 +113,15 @@ const config = {
     },
 
     {
+      title: 'Tiny Ninja',
+      description:
+        'The player will act as a ninja who will prove to his sensei that the player can conquer all existing clans by defeating several monsters and warriors from each existing clan. Players will be equipped with several weapons that are useful in determining the type of attack that suits the distance of each enemy that comes in the way. Each weapon has a different area and type of attack. During the game, players will be equipped with 3 types of attacks that are differentiated from the attack distance. For example, players will be given a sword as a weapon that has a short range, hammer as a medium range weapon and bow as a long range weapon.',
+      imageUrl:
+        'https://i.imgur.com/6cPCXZh.png',
+      link: 'https://drive.google.com/file/d/1RDcF2GcCr81uaqLxmypzM0rzhz3tGYTc/view?usp=sharing',
+    },
+
+    {
       title: 'Cafe Express Rush',
       description:
         'The player will be a manager at some leftover cafe by the players in the game dads. The player will maintain and develop the leftover cafe from the beginning because the father has to pay the debt and sell all that fancy stuff. All that remains is a cafe, an old coffee machine, and a few tables. In this game, the player will continue their parent\'s legacy.',
@@ -129,6 +138,7 @@ const config = {
         'https://i.imgur.com/6cPCXZh.png',
       link: 'https://docs.google.com/document/d/19v0TAYoJMxWWdBNiHXhuiC0YolXIe4WXGH_712yBS88/edit?usp=drive_link',
     },
+
 
   ],
 
