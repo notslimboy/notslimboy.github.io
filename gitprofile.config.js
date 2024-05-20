@@ -112,14 +112,14 @@ const config = {
       link: 'https://docs.google.com/document/d/1EV4_IYBSWkQpo3zcPWvBUxn4pZ-YkrlGZH4EU0e1Ym8/edit?usp=drive_link',
     },
 
-    // {
-    //   title: 'Tiny Ninja',
-    //   description:
-    //     'The player will act as a ninja who will prove to his sensei that the player can conquer all existing clans by defeating several monsters and warriors from each existing clan. Players will be equipped with several weapons that are useful in determining the type of attack that suits the distance of each enemy that comes in the way. Each weapon has a different area and type of attack. During the game, players will be equipped with 3 types of attacks that are differentiated from the attack distance. For example, players will be given a sword as a weapon that has a short range, hammer as a medium range weapon and bow as a long range weapon.',
-    //   imageUrl:
-    //     'https://i.imgur.com/6cPCXZh.png',
-    //   link: 'https://drive.google.com/file/d/1RDcF2GcCr81uaqLxmypzM0rzhz3tGYTc/view?usp=sharing',
-    // },
+    {
+      title: 'Tiny Ninja',
+      description:
+        'The player will act as a ninja who will prove to his sensei that the player can conquer all existing clans by defeating several monsters and warriors from each existing clan. Players will be equipped with several weapons that are useful in determining the type of attack that suits the distance of each enemy that comes in the way. Each weapon has a different area and type of attack. During the game, players will be equipped with 3 types of attacks that are differentiated from the attack distance. For example, players will be given a sword as a weapon that has a short range, hammer as a medium range weapon and bow as a long range weapon.',
+      imageUrl:
+        'https://i.imgur.com/6cPCXZh.png',
+      link: 'https://drive.google.com/file/d/1RDcF2GcCr81uaqLxmypzM0rzhz3tGYTc/view?usp=sharing',
+    },
 
     {
       title: 'Cafe Express Rush',
