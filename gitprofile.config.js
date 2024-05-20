@@ -151,14 +151,14 @@ const config = {
       imageUrl: "https://api.duniagames.co.id/api/content/upload/file/4188434531620282995.jpg",
       link: 'https://youtu.be/PuMKBskZpQQ?si=fHE6EWwPU0hWrYew',
     },
-    {
+/*    {
       title: '18 Days of War Mahabarats',
       description:
         'Destroying the opponents tower or base by removing several available units by giving silver as a condition for being able to remove the unit. Players are required to have their strategy in winning the game either in the form of defense or attack. Players are also required to pay attention to each unit issued whether it has been effective or not in defeating the enemy',
       imageUrl:
         'https://i.imgur.com/RVlBlR9.png',
       link: 'https://18daysofwar.mashida.io/',
-    },
+    },*/
     {
       title: 'Flashcard Lumber',
       description:
