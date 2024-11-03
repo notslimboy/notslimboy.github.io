@@ -38,11 +38,18 @@ const config = {
     'Corel',
   ],
   experiences: [
+     {
+      company: 'Imaji Digi Studio',
+      position: 'Game Designer',
+      from: 'July 2024',
+      to: 'Present',
+      companyLink: 'https://www.imajidigistudio.com/',
+    },
     {
       company: 'Miraimimpi',
       position: 'Game Designer',
       from: 'August 2021',
-      to: 'Present',
+      to: 'July 2024',
       companyLink: 'https://www.instagram.com/miraimimpi/',
     },
     {
