@@ -112,14 +112,14 @@ const config = {
       link: 'https://docs.google.com/document/d/1EV4_IYBSWkQpo3zcPWvBUxn4pZ-YkrlGZH4EU0e1Ym8/edit?usp=drive_link',
     },
 
-    {
+   /* {
       title: 'Tiny Ninja',
       description:
         'The player will act as a ninja who will prove to his sensei that the player can conquer all existing clans by defeating several monsters and warriors from each existing clan. Players will be equipped with several weapons that are useful in determining the type of attack that suits the distance of each enemy that comes in the way. Each weapon has a different area and type of attack. During the game, players will be equipped with 3 types of attacks that are differentiated from the attack distance. For example, players will be given a sword as a weapon that has a short range, hammer as a medium range weapon and bow as a long range weapon.',
       imageUrl:
         'https://i.imgur.com/6cPCXZh.png',
       link: 'https://drive.google.com/file/d/1RDcF2GcCr81uaqLxmypzM0rzhz3tGYTc/view?usp=sharing',
-    },
+    },*/
 
     {
       title: 'Cafe Express Rush',
@@ -151,14 +151,14 @@ const config = {
       imageUrl: "https://api.duniagames.co.id/api/content/upload/file/4188434531620282995.jpg",
       link: 'https://youtu.be/PuMKBskZpQQ?si=fHE6EWwPU0hWrYew',
     },
-/*    {
+   {
       title: '18 Days of War Mahabarats',
       description:
         'Destroying the opponents tower or base by removing several available units by giving silver as a condition for being able to remove the unit. Players are required to have their strategy in winning the game either in the form of defense or attack. Players are also required to pay attention to each unit issued whether it has been effective or not in defeating the enemy',
       imageUrl:
         'https://i.imgur.com/RVlBlR9.png',
       link: 'https://18daysofwar.mashida.io/',
-    },*/
+    },
     {
       title: 'Flashcard Lumber',
       description:
