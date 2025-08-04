@@ -2,7 +2,7 @@
  *   Copyright (c) 2025 
  *   All rights reserved.
  */
-const baseURL = 'localhost:3000'
+const baseURL = 'https://notslimboy.my.id/'
 
 const routes = {
     '/':        true,
