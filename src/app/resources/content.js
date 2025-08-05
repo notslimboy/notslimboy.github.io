@@ -350,7 +350,7 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/Lemoo-Hi.mp4",
+      src: "/images/gallery/Lemoo-HI.mp4",
       alt: "image",
       orientation: "vertical",
     },
