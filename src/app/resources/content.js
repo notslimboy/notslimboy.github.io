@@ -44,7 +44,7 @@ const social = [
   {
     name: "Itch.io",
     icon: "itchIO",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://notslimboy.itch.io/",
   },
   {
     name: "Email",
