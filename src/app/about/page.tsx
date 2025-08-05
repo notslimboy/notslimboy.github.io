@@ -176,6 +176,8 @@ export default function About() {
                 <Flex paddingX="8">Download Resume</Flex>
                 <IconButton
                   href={about.calendar.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"

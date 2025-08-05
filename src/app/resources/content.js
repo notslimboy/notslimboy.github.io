@@ -81,7 +81,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://drive.google.com/uc?export=download&id=1h6nYS5cfbTeZOTXUek9LjQPD5smdi2RX",
+    link: "/about/CV Raka Arya Pratama ATS.pdf",
   },
   intro: {
     display: true,
@@ -294,9 +294,9 @@ const work = {
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
+  label: "Others",
+  title: "Other Projects",
+  description: `A project collection by ${person.name}`,
   // Images from https://pexels.com
   images: [
     {
