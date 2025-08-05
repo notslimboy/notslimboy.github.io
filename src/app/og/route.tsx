@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2025 
+ *   All rights reserved.
+ */
 import { ImageResponse } from 'next/og'
 import { baseURL } from '@/app/resources';
 import { person } from '@/app/resources/content';

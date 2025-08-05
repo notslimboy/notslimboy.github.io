@@ -2,14 +2,14 @@
  *   Copyright (c) 2025 
  *   All rights reserved.
  */
-const baseURL = 'https://notslimboy.my.id/'
+const baseURL = 'http://localhost:3000'
 
 const routes = {
     '/':        true,
     '/about':   true,
     '/work':    true,
     '/blog':    false,
-    '/gallery': false,
+    '/gallery': true,
 }
 
 // Enable password protection on selected routes
@@ -55,9 +55,9 @@ const effects = {
         opacity: 20
     },
     lines: {
-        display: false,
+        display: true,
         color: 'neutral-alpha-weak',
-        opacity: 100
+        opacity: 500
     },
     grid: {
         display: false,

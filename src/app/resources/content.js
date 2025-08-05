@@ -73,7 +73,7 @@ const about = {
   title: "About me",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
-    display: true,
+    display: false,
     subItems: false,
   },
   avatar: {
@@ -125,8 +125,7 @@ const about = {
             for immersive promotional activations.
           </>,
         ],
-        images: [
-        ],
+        images: [],
       },
       {
         company: "Miraimimpi",
@@ -211,7 +210,10 @@ const about = {
       {
         title: "Unity",
         description: (
-          <>Able to create a prototype for game mecchanic and in-game engine testing</>
+          <>
+            Able to create a prototype for game mecchanic and in-game engine
+            testing
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -221,7 +223,7 @@ const about = {
             width: 16,
             height: 9,
           },
-           {
+          {
             src: "/images/projects/project-01/Unity2-Skill.png",
             alt: "Project image",
             width: 16,
@@ -232,7 +234,10 @@ const about = {
       {
         title: "Machination",
         description: (
-          <>Machinations is a visual tool for designing and balancing game systems like economy, resources, and mechanics.</>
+          <>
+            Machinations is a visual tool for designing and balancing game
+            systems like economy, resources, and mechanics.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -266,8 +271,7 @@ const about = {
           <>Creating formula for balancing and in-game economies projections</>
         ),
         // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
+        images: [],
       },
     ],
   },
@@ -296,74 +300,64 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/Iger-Weather.mp4",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
+      src: "/images/gallery/Ariel-GetRill.mp4",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
+      src: "/images/gallery/hari-menabung.mp4",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
+      src: "/images/gallery/Hari-Pahlawan.mp4",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
+      src: "/images/gallery/BRI-LocalFest.mp4",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-12.jpg",
+      src: "/images/gallery/HUT-BRI.mp4",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-13.jpg",
+      src: "/images/gallery/TahunBaru.mp4",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/gallery/Mutant-HI.mp4",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Mutant-BlokM.mp4",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Mutant-Mandarin.mp4",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Lemoo-Hi.mp4",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/So-Good-Nugget.mp4",
+      alt: "image",
+      orientation: "vertical",
     },
   ],
 };
