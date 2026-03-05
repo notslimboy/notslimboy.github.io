@@ -25,7 +25,7 @@ import {
 	HiArrowTopRightOnSquare,
 	HiEnvelope,
 	HiCalendarDays,
-	HiClipboard,
+	HiOutlineClipboard,
 	HiArrowRight
 } from "react-icons/hi2";
 
@@ -46,9 +46,9 @@ import {
 
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
-  chevronDown: HiChevronDown,
+	chevronDown: HiChevronDown,
 	chevronRight: HiChevronRight,
-	itchIO:FaItchIo,
+	itchIO: FaItchIo,
 	resume: BsFileEarmarkPersonFill,
 	chevronLeft: HiChevronLeft,
 	refresh: HiOutlineArrowPath,
@@ -74,6 +74,6 @@ export const iconLibrary: Record<string, IconType> = {
 	github: FaGithub,
 	linkedin: FaLinkedin,
 	x: FaXTwitter,
-	clipboard: HiClipboard,
+	clipboard: HiOutlineClipboard,
 	arrowUpRightFromSquare: HiArrowTopRightOnSquare
 };

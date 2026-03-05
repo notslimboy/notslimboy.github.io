@@ -32,7 +32,9 @@ const SmartImage: React.FC<SmartImageProps> = ({
   ...rest
 }) => {
   const [isEnlarged, setIsEnlarged] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleClick = () => {
     if (enlarge) {
@@ -62,6 +64,39 @@ const SmartImage: React.FC<SmartImageProps> = ({
       document.body.style.overflow = "auto";
     };
   }, [isEnlarged]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsVisible(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isVisible) {
+        videoRef.current.play().catch((err) => {
+          console.warn("Autoplay was prevented:", err);
+        });
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isVisible]);
 
   const calculateTransform = () => {
     if (!imageRef.current) return {};
@@ -98,7 +133,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
       : "";
   };
 
-  const isVideo = src?.endsWith(".mp4");
+  const isVideo = src?.endsWith(".mp4") || src?.endsWith(".webm");
   const isYouTube = isYouTubeVideo(src);
 
   return (
@@ -124,8 +159,8 @@ const SmartImage: React.FC<SmartImageProps> = ({
         {isLoading && <Skeleton shape="block" />}
         {!isLoading && isVideo && (
           <video
+            ref={videoRef}
             src={src}
-            autoPlay
             loop
             muted
             playsInline

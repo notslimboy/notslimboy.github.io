@@ -15,16 +15,19 @@ interface ProjectCardProps {
     description: string;
     avatars: { src: string }[];
     link: string;
+    links?: { title: string; url: string }[];
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
     href,
+    priority,
     images = [],
     title,
     content,
     description,
     avatars,
     link,
+    links,
 }) => {
     return (
         <Flex
@@ -32,10 +35,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             direction="column">
             <Carousel
                 sizes="(max-width: 960px) 100vw, 960px"
-                images={images.map(image => ({
-                src: image,
-                alt: title
-            }))}/>
+                images={images.map((image, index) => ({
+                    src: image,
+                    alt: title,
+                    priority: priority && index === 0
+                }))} />
             <Flex
                 mobileDirection="column"
                 fillWidth paddingX="s" paddingTop="12" paddingBottom="24" gap="l">
@@ -58,7 +62,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                             <AvatarGroup
                                 avatars={avatars}
                                 size="m"
-                                reverse/>
+                                reverse />
                         )}
                         {description?.trim() && (
                             <Text
@@ -72,12 +76,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                             {content?.trim() && (
                                 <SmartLink
                                     suffixIcon="arrowRight"
-                                    style={{margin: '0', width: 'fit-content'}}
+                                    style={{ margin: '0', width: 'fit-content' }}
                                     href={href}>
-                                        <Text
-                                            variant="body-default-s">
+                                    <Text
+                                        variant="body-default-s">
                                         See More
-                                        </Text>
+                                    </Text>
                                 </SmartLink>
                             )}
                             {link && (
@@ -88,6 +92,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                                     <Text variant="body-default-s">Link</Text>
                                 </SmartLink>
                             )}
+                            {links && links.map((linkItem, index) => (
+                                <SmartLink
+                                    key={index}
+                                    suffixIcon="arrowUpRightFromSquare"
+                                    style={{ margin: "0", width: "fit-content" }}
+                                    href={linkItem.url}>
+                                    <Text variant="body-default-s">{linkItem.title}</Text>
+                                </SmartLink>
+                            ))}
                         </Flex>
                     </Flex>
                 )}

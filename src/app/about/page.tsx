@@ -196,7 +196,7 @@ export default function About() {
             </Text>
             {social.length > 0 && (
               <Flex
-                className={styles.blockAlign}
+                className={`${styles.blockAlign} ${styles.centerContent}`}
                 paddingTop="20"
                 paddingBottom="8"
                 gap="8"

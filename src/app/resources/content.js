@@ -224,7 +224,7 @@ const about = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/Unity2-Skill.png",
+            src: "/images/projects/project-01/Unity2-Skill.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -253,7 +253,7 @@ const about = {
       {
         title: "Figma",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>High-fidelity, rapid prototyping.</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -271,7 +271,14 @@ const about = {
           <>Creating formula for balancing and in-game economies projections</>
         ),
         // optional: leave the array empty if you don't want to display images
-        images: [],
+        images: [
+          {
+            src: "/images/projects/project-01/Spreadsheet-Skill.png",
+            alt: "Spreadsheet Skill",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
