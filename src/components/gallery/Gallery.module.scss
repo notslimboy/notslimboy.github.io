@@ -4,8 +4,11 @@
  */
 .masonryGrid {
     display: flex;
+    /* margin-left: -16px shifts the grid left by the gutter size.
+       width must be (100% + gutter) so the grid's right edge reaches the parent's right edge.
+       Without this, the grid ends at (parentWidth - 16px), leaving a gap on the right. */
     margin-left: calc(-1 * var(--static-space-16));
-    width: 100%;
+    width: calc(100% + var(--static-space-16));
 }
 
 .masonryGridColumn {

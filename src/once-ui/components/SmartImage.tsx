@@ -33,8 +33,14 @@ const SmartImage: React.FC<SmartImageProps> = ({
 }) => {
   const [isEnlarged, setIsEnlarged] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [mediaLoaded, setMediaLoaded] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Reset load state whenever src changes
+  useEffect(() => {
+    setMediaLoaded(false);
+  }, [src]);
 
   const handleClick = () => {
     if (enlarge) {
@@ -120,13 +126,13 @@ const SmartImage: React.FC<SmartImageProps> = ({
 
   const isYouTubeVideo = (url: string) => {
     const youtubeRegex =
-      /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+      /(?:youtube\.com\/(?:[^/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
     return youtubeRegex.test(url);
   };
 
   const getYouTubeEmbedUrl = (url: string) => {
     const match = url.match(
-      /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
+      /(?:youtube\.com\/(?:[^/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
     );
     return match
       ? `https://www.youtube.com/embed/${match[1]}?controls=0&rel=0&modestbranding=1`
@@ -135,6 +141,9 @@ const SmartImage: React.FC<SmartImageProps> = ({
 
   const isVideo = src?.endsWith(".mp4") || src?.endsWith(".webm");
   const isYouTube = isYouTubeVideo(src);
+
+  // Show skeleton when externally forced OR when media hasn't loaded yet
+  const showSkeleton = isLoading || !mediaLoaded;
 
   return (
     <>
@@ -156,7 +165,14 @@ const SmartImage: React.FC<SmartImageProps> = ({
         onClick={handleClick}
         {...rest}
       >
-        {isLoading && <Skeleton shape="block" />}
+        {/* Skeleton overlay — clipped by parent overflow:hidden to match image radius */}
+        {showSkeleton && (
+          <Skeleton
+            shape="block"
+            style={{ position: "absolute", inset: 0, zIndex: 1, borderRadius: 0 }}
+          />
+        )}
+
         {!isLoading && isVideo && (
           <video
             ref={videoRef}
@@ -164,6 +180,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
             loop
             muted
             playsInline
+            onCanPlay={() => setMediaLoaded(true)}
             style={{
               width: "100%",
               height: "100%",
@@ -179,6 +196,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
             frameBorder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            onLoad={() => setMediaLoaded(true)}
             style={{
               objectFit: objectFit,
             }}
@@ -192,8 +210,11 @@ const SmartImage: React.FC<SmartImageProps> = ({
             sizes={sizes}
             unoptimized={unoptimized}
             fill
+            onLoad={() => setMediaLoaded(true)}
             style={{
               objectFit: objectFit,
+              opacity: mediaLoaded ? 1 : 0,
+              transition: "opacity 0.3s ease",
             }}
           />
         )}

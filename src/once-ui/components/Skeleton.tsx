@@ -17,12 +17,18 @@ interface SkeletonProps extends React.ComponentProps<typeof Flex> {
 
 const Skeleton: React.FC<SkeletonProps> = forwardRef<HTMLDivElement, SkeletonProps>(
   ({ shape = "line", width, height, delay, style, className, ...props }, ref) => {
+    const radiusMap = {
+      block: "l" as const,
+      line: "m" as const,
+      circle: "full" as const,
+    };
+
     return (
       <Flex
         {...props}
         ref={ref}
         style={style}
-        radius="full"
+        radius={radiusMap[shape]}
         inline
         className={classNames(
           styles.skeleton,

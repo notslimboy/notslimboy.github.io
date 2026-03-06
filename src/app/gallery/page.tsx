@@ -37,9 +37,9 @@ export async function generateMetadata() {
 }
 
 export default function Gallery() {
-    return (
-        <Flex fillWidth>
-            <script
+	return (
+		<Flex fillWidth>
+			<script
 				type="application/ld+json"
 				suppressHydrationWarning
 				dangerouslySetInnerHTML={{
@@ -50,14 +50,14 @@ export default function Gallery() {
 						description: gallery.description,
 						url: `https://${baseURL}/gallery`,
 						image: gallery.images.map((image) => ({
-                            '@type': 'ImageObject',
-                            url: `${baseURL}${image.src}`,
-                            description: image.alt,
-                        })),
+							'@type': 'ImageObject',
+							url: `${baseURL}${image.src}`,
+							description: image.alt,
+						})),
 						author: {
 							'@type': 'Person',
 							name: person.name,
-                            image: {
+							image: {
 								'@type': 'ImageObject',
 								url: `${baseURL}${person.avatar}`,
 							},
@@ -65,7 +65,9 @@ export default function Gallery() {
 					}),
 				}}
 			/>
-            <MasonryGrid/>
-        </Flex>
-    );
+			<Flex fillWidth overflow="hidden">
+				<MasonryGrid />
+			</Flex>
+		</Flex>
+	);
 }

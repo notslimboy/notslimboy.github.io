@@ -94,6 +94,7 @@ const Carousel: React.FC<CarouselProps> = ({
           alt={images[activeIndex]?.alt}
           aspectRatio={aspectRatio}
           src={images[activeIndex]?.src}
+          isLoading={!isTransitioning}
           style={{
             border: "1px solid var(--neutral-alpha-weak)",
             ...(images.length > 1 && {
